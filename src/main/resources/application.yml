@@ -1,0 +1,4 @@
+spring:
+  app:
+    name: my-application
+

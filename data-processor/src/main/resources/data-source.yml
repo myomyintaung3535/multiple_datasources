@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    # Primary database configuration
+    primary:
+      url: jdbc:mysql://localhost:3306/primary_db
+      username: root
+      password: mm@12345
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+    # Secondary database configuration
+    secondary:
+      url: jdbc:mysql://localhost:3306/secondary_db
+      username: root
+      password: mm@12345
+      driver-class-name: com.mysql.cj.jdbc.Driver
