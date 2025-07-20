@@ -1,11 +1,10 @@
-package com.mm.example.model;
+package com.mm.example.dbTwo.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.context.annotation.Bean;
 
 @Entity
 @Builder

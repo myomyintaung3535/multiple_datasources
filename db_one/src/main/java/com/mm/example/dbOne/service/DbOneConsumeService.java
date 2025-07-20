@@ -1,5 +1,6 @@
-package com.mm.example.service;
+package com.mm.example.dbOne.service;
 
+import com.mm.example.dbOne.repository.EmployeeRepository;
 import com.mm.example.dto.ApiData;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -10,6 +11,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class DbOneConsumeService {
 
+    private final EmployeeRepository employeeRepository;
 
     public void consume(List<ApiData> apiDataList) {
     }

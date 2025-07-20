@@ -1,4 +1,4 @@
-package com.mm.example.config;
+package com.mm.example.dbOne.config;
 
 import com.zaxxer.hikari.HikariDataSource;
 import jakarta.persistence.EntityManagerFactory;
@@ -18,7 +18,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableJpaRepositories(
-        basePackages = "com.mm.example.repository",
+        basePackages = "com.mm.example.dbOne.repository",
         entityManagerFactoryRef = "dbOneEntityManagerFactory",
         transactionManagerRef = "dbOneTransactionManager")
 public class DbOneDataSourceConfig {
@@ -45,7 +45,7 @@ public class DbOneDataSourceConfig {
                                                                            @Qualifier("dbOneDataSource") DataSource dbOneDataSource){
         return builder
                 .dataSource(dbOneDataSource)
-                .packages("com.mm.example.model") // Specify the package where your entities are located
+                .packages("com.mm.example.dbOne.model")
                 .persistenceUnit("dbOne")
                 .build();
     }

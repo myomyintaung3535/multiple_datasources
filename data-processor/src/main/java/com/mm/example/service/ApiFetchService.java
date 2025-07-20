@@ -1,5 +1,7 @@
 package com.mm.example.service;
 
+import com.mm.example.dbTwo.service.DbTwoConsumeService;
+import com.mm.example.dbOne.service.DbOneConsumeService;
 import com.mm.example.dto.ApiData;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -19,7 +21,7 @@ public class ApiFetchService {
     private final DbOneConsumeService dbOneConsumeService;
     private final DbTwoConsumeService dbTwoConsumeService;
 
-    @Value("${api-url}]")
+    @Value("${api.url}]")
     private String apiUrl;
 
     public List<ApiData> fetchDataFromApi() {
