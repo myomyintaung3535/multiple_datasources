@@ -1,10 +1,8 @@
 spring:
   app:
     name: my-application
-
   config:
     import: classpath:data-source.yml
-
   jpa:
     hibernate:
       ddl-auto: update
@@ -12,6 +10,5 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
-
-  application:
-    api-url: http://localhost:8080/api/employees
+api:
+  url: http://localhost:8080/api/employees
